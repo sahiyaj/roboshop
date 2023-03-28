@@ -16,9 +16,7 @@ services:
       - mysql
       - shipping
       - payment
-  mongodb:
-    image: mongodb:v1
-    container_name: mongodb
+ 
   catalogue:
     image: catalogue:v1
     container_name: catalogue
@@ -54,5 +52,7 @@ services:
     container_name: payment
     depends_on:
       - rabbitmq
-
+  mongodb:
+    image: mongodb:v1
+    container_name: mongodb
 
