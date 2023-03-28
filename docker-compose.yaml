@@ -55,4 +55,9 @@ services:
   mongodb:
     image: mongodb:v1
     container_name: mongodb
+  ratings:
+    image: ratings:v1
+    container_name: ratings
+    depends_on:
+      - mysql  
 
