@@ -79,7 +79,7 @@ services:
     image: rabbitmq
     container_name: rabbitmq
     volumes:
-    - mysql:/var/lib/rabbitmq
+    - rabbitmq:/var/lib/rabbitmq
   payment:
     image: payment:v1
     container_name: payment
